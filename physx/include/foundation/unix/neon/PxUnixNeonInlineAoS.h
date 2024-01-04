@@ -3526,7 +3526,7 @@ template <> PX_FORCE_INLINE VecU32V V4U32SplatElement<2>(VecU32V a) { return vdu
 template <> PX_FORCE_INLINE VecU32V V4U32SplatElement<3>(VecU32V a) { return vdupq_lane_u32(vget_high_u32(a), 1); }
 #endif
 
-#if !PX_SWITCH
+#if !PX_SWITCH && 0
 template <int index>
 PX_FORCE_INLINE Vec4V V4SplatElement(Vec4V a)
 {
